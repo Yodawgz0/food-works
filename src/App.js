@@ -1,9 +1,12 @@
-import "./App.css";
+import "./App.scss";
+import HeaderMain from "./components/HeaderMain";
+import FooterMain from "./components/FooterMain";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">Hellirto</header>
+      <HeaderMain />
+      <FooterMain />
     </div>
   );
 }
