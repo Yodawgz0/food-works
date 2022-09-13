@@ -8,7 +8,7 @@ export default function HeaderMain() {
       <h5>RESTAURANT</h5>
     <nav id="navbar">
       <ul>
-        <li><a>Home</a></li>
+        <li><a><span>Home</span></a></li>
         <li><a>Menu</a></li>
         <li><a>About</a></li>
         <li><a>Gallery</a></li>

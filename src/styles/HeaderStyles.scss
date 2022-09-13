@@ -1,3 +1,5 @@
+/*headder section*/
+/*heading styles*/
 .HeaderContainer {
   width: 100%;
   height:auto;
@@ -26,7 +28,7 @@
   margin-bottom: 0.5rem;
   margin-top: 0px;
 }
-
+/* navigation bar styles*/
 #navbar ul{
   list-style: none;
 }
@@ -41,6 +43,14 @@
   transition: color 0.5s;
 }
 
+#navbar li a span{
+  color: red;
+}
+
 #navbar li a:hover{
 color: red;
+}
+
+#navbar li a span:hover{
+color: rgb(148, 144, 144);
 }
