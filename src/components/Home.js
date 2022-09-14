@@ -1,9 +1,18 @@
 import React from "react";
 
+
 export default function Home() {
   return (
     <div className="HomeContainer">
-      <h2>This is the Home</h2>
+      {<img src={require('./pic1.webp')} /> }
+      <div className="InviteContainer">
+        <h2>delightful experiences</h2>
+        <h1>Welcome to "Deeplight Restaurant"</h1>
+        <button>Reservation</button>
+      </div>
     </div>
+
+
   );
+  
 }
