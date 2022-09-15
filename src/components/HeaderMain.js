@@ -14,12 +14,12 @@ export default function HeaderMain() {
       <h2>___</h2>
       <h1 className="HeaderContainer__mainHeading">DEEPLIGHT</h1>
       <h5 className="HeaderContainer__subHeading">RESTAURANT</h5>
-      <nav id="HeaderContainer__navbar">
-        <ul>
+      <nav className="navbar">
+        <ul className="navbar__ulattributes">
           {menuDetails.map((element, index) => {
             return (
-              <li>
-                <a key={index} href="{#}">
+              <li className="navbar__liattributes">
+                <a className="navbar__navlinks" key={index} href="{#}">
                   {element}
                 </a>
               </li>

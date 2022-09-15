@@ -5,6 +5,7 @@
   height: auto;
   text-align: center;
   &__mainHeading {
+    
     margin: 0px;
     padding: 0px;
     font-family: serif;
@@ -25,30 +26,29 @@
   margin-bottom: 0.5rem;
   margin-top: 0px;
 }
+
 /* navigation bar styles*/
-#navbar ul {
-  list-style: none;
-}
-#navbar li {
-  display: inline-block;
-  margin: 10px 15px 10px 15px;
-}
-#navbar li a {
+
+.navbar{
+  &__ulattributes{
+    list-style: none;
+  }
+  &__liattributes{
+    display: inline-block;
+    margin: 10px 15px 10px 15px;
+  }
+  &__navlinks{
   color: rgb(148, 144, 144);
   font-weight: 700;
   font-size: 1.05rem;
   transition: color 0.5s;
   text-decoration: none;
+  }
+  &__navlinks:hover{
+    color: red;
+  }
 }
 
-#navbar li a span {
-  color: red;
-}
 
-#navbar li a:hover {
-  color: red;
-}
 
-#navbar li a span:hover {
-  color: rgb(148, 144, 144);
-}
+
