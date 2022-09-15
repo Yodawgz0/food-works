@@ -1,3 +1,57 @@
+/*headder section*/
+/*heading styles*/
 .HeaderContainer {
-  color: blue;
+  width: 100%;
+  height:auto;
+  text-align: center;
+}
+
+.HeaderContainer h1{
+  margin: 0px;
+  padding: 0px;
+  font-family: serif;
+  font-weight: 515;
+  font-size: 2rem;
+
+}
+
+.HeaderContainer h5{
+  margin-top: 0px;
+  padding-top: 0px;
+  letter-spacing: 0.15rem;
+  color: #8C8B8C;
+  font-size: 0.7rem;
+}
+
+.HeaderContainer h2{
+  color: red;
+  margin-bottom: 0.5rem;
+  margin-top: 0px;
+}
+/* navigation bar styles*/
+#navbar ul{
+  list-style: none;
+}
+#navbar li{
+  display: inline-block;
+  margin: 10px 15px 10px 15px;   
+}
+#navbar li a{
+  color: rgb(148, 144, 144);
+  font-weight: 700;
+  font-size: 1.05rem;
+  transition: color 0.5s;
+  text-decoration: none;
+}
+
+#navbar li a span{
+  color: red;
+}
+
+#navbar li a:hover{
+color: red;
+}
+
+#navbar li a span:hover{
+color: rgb(148, 144, 144);
 }
