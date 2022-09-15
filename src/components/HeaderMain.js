@@ -1,22 +1,32 @@
 import React from "react";
 
 export default function HeaderMain() {
+  const menuDetails = [
+    "Home",
+    "Menu",
+    "About",
+    "Gallery",
+    "Testimonials",
+    "Contact",
+  ];
   return (
     <div className="HeaderContainer">
       <h2>___</h2>
-      <h1>DEEPLIGHT</h1>
-      <h5>RESTAURANT</h5>
-    <nav id="navbar">
-      <ul>
-        <li><a href="{#}"><span>Home</span></a></li>
-        <li><a href="{#}">Menu</a></li>
-        <li><a href="{#}">About</a></li>
-        <li><a href="{#}">Gallery</a></li>
-        <li><a href="{#}">Testimonials</a></li>
-        <li><a href="{#}">Contact</a></li>
-      </ul>
-    </nav>
+      <h1 className="HeaderContainer__mainHeading">DEEPLIGHT</h1>
+      <h5 className="HeaderContainer__subHeading">RESTAURANT</h5>
+      <nav id="HeaderContainer__navbar">
+        <ul>
+          {menuDetails.map((element, index) => {
+            return (
+              <li>
+                <a key={index} href="{#}">
+                  {element}
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+      </nav>
     </div>
-
   );
 }
