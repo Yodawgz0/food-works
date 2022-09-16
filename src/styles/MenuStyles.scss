@@ -1,3 +1,4 @@
+/*style part for the intro to menu*/
 .menucontainer{
     height: auto;
     width: 100vw;
@@ -35,6 +36,7 @@
     }
 }
 
+/*style part for the whole menu container*/
 .menulist{
     display: flex;
     flex-direction: row;
@@ -50,7 +52,7 @@
             font-weight:600;
         }
     }
-    
+/*style part for the menu images*/    
     &__chefimage{
         height:auto;
         width: 50vw;
@@ -61,6 +63,7 @@
         }
     }
 }
+/*style part for the name of the dishes*/
 .dishname{
     &__mainname{
         margin-bottom:0px;
