@@ -81,3 +81,20 @@
         font-size: 1rem;
     }
 }
+
+.endredline{
+    height: 25vh;
+    width: 100vw;
+    background-color: #F6F3F1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    &__redline{
+        margin-top: 7vh;
+        left: 50vw;
+        border-left: 2px solid red;
+        height: 13vh;
+        margin-bottom: 7vh;
+    }
+}
