@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function HeaderMain() {
-  const menuDetails = [
+  const navDetails = [
     "Home",
     "Menu",
     "About",
@@ -16,7 +16,7 @@ export default function HeaderMain() {
       <h5 className="HeaderContainer__subHeading">RESTAURANT</h5>
       <nav className="navbar">
         <ul className="navbar__ulattributes">
-          {menuDetails.map((element, index) => {
+          {navDetails.map((element, index) => {
             return (
               <li className="navbar__liattributes">
                 <a className="navbar__navlinks" key={index} href="{#}">
