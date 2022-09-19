@@ -1,6 +1,7 @@
 import React from "react";
 import MainPic from "../public/cooking board.png";
 import AboutPic from "../public/tables.png";
+
 export default function Home() {
   return (
     <div className="HomeContainer">
