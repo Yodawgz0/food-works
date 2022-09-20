@@ -77,12 +77,19 @@ export default function Menu() {
       <div className="menulist">
         <div className="menulist__chefrecommend">
           <h1>Chef Recommend</h1>
-          <section className="dishname">
-            <h2 className="dishname__mainname">
-              Lamb Salad With Fregola<span> ---------$32.5</span>
-            </h2>
-            <h3 className="dishname__desc">Lamb/fregola</h3>
-          </section>
+          {fooditem.map((element, index) => {
+            return index < 4 ? (
+              <section className="dishname">
+                <h2 className="dishname__mainname">
+                  {element.name}
+                  <span> ---------${element.price}</span>
+                </h2>
+                <h3 className="dishname__desc">{element.indi}</h3>
+              </section>
+            ) : (
+              <></>
+            );
+          })}
         </div>
         <div className="menulist__chefimage">
           <img alt="SampleImage" src={Chefrec} />
@@ -95,12 +102,19 @@ export default function Menu() {
         </div>
         <div className="menulist__chefrecommend">
           <h1>We Recommend</h1>
-          <section className="dishname">
-            <h2 className="dishname__mainname">
-              Lamb Salad With Fregola<span> ---------$32.5</span>
-            </h2>
-            <h3 className="dishname__desc">Lamb/fregola</h3>
-          </section>
+          {fooditem.map((element, index) => {
+            return index > 3 ? (
+              <section className="dishname">
+                <h2 className="dishname__mainname">
+                  {element.name}
+                  <span> ---------${element.price}</span>
+                </h2>
+                <h3 className="dishname__desc">{element.indi}</h3>
+              </section>
+            ) : (
+              <></>
+            );
+          })}
         </div>
       </div>
       <div className="endredline">
