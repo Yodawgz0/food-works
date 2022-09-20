@@ -79,16 +79,13 @@ export default function Menu() {
           <h1>Chef Recommend</h1>
           {fooditem.map((element, index) => {
             return index < 4 ? (
-              <div key={index}>
-                {" "}
-                <section className="dishname">
-                  <h2 className="dishname__mainname">
-                    {element.name}
-                    <span key={index}> ---------${element.price}</span>
-                  </h2>
-                  <h3 className="dishname__desc">{element.indi}</h3>
-                </section>
-              </div>
+              <section className="dishname">
+                <h2 className="dishname__mainname">
+                  {element.name}
+                  <span key={index}> ---------${element.price}</span>
+                </h2>
+                <h3 className="dishname__desc">{element.indi}</h3>
+              </section>
             ) : (
               <></>
             );
