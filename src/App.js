@@ -2,6 +2,7 @@ import "./App.scss";
 import HeaderMain from "./components/HeaderMain";
 import FooterMain from "./components/FooterMain";
 import Home from "./components/Home";
+import Testimonials from "./components/Testimonials";
 import Menu from "./components/Menu";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <HeaderMain />
       <Home />
       <Menu />
+      <Testimonials/>
       <FooterMain />
     </div>
   );

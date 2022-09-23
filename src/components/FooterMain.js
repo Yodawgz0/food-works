@@ -1,25 +1,39 @@
 import React from "react";
+import {
+  faFacebook,
+  faInstagram,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import FooterPic from "../assets/footer.png";
 
 export default function FooterMain() {
   return (
     <div className="footerContainer">
-      <h2>____</h2>
-      <h1>DEEPLIGHT</h1>
-      <h5>RESTAURANT</h5>
-      <div className="footerContainerContact">
-        <h5>You can reach us at</h5>
-        <h2>______________________________</h2>
-        <h1>+1 123 456 7890</h1>
-    </div>
-    <div className="footerContainerAddress">
-      <h5>Address</h5>
-      <h6>13 Fifth Avenue, New York</h6>
-    </div>
-    <div className="footerContainerSocial">
-      <a href="{#}"><i className="fab fa-facebook-f"></i></a>
-      <a href="{#}"><i className="fab fa-instagram"></i></a>
-      <a href="{#}"><i className="fab fa-twitter"></i></a>
-    </div>
+      <img alt="FooterPic" src={FooterPic} />
+
+      <div className="footContainer">
+        <h1 className="footContainer__mainheading">DEEPLIGHT</h1>
+        <h5 className="footContainer__subheading">RESTAURANT</h5>
+        <h5 className="footContainer__contact">You can reach us at</h5>
+        <div className="footContainer__blackline"></div>
+        <h1 className="footContainer__number">+1 123 456 7890</h1>
+
+        <h5 className="footContainer__address">Address</h5>
+        <h6 className="footContainer__mainaddress">
+          13 Fifth Avenue, New York
+        </h6>
+
+        <a className="footContainer__icons" href="https://facebook.com">
+          <FontAwesomeIcon icon={faFacebook} size="2x" color="black" />
+        </a>
+        <a className="footContainer__icons" href="https://instagram.com">
+          <FontAwesomeIcon icon={faInstagram} size="2x" color="black" />
+        </a>
+        <a className="footContainer__icons" href="https://twitter.com">
+          <FontAwesomeIcon icon={faTwitter} size="2x" color="black" />
+        </a>
+      </div>
     </div>
   );
 }
