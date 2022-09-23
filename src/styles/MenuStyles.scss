@@ -1,0 +1,100 @@
+/*style part for the intro to menu*/
+.menucontainer{
+    height: auto;
+    width: 100vw;
+    background-color: #F6F3F1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    &__redline{
+        margin-top: 7vh;
+        left: 50vw;
+        border-left: 2px solid red;
+        height: 13vh;
+    }
+    &__suggestionheading{
+        font-size: 0.8rem;
+        font-style: italic;
+        font-family: fantasy;
+        letter-spacing: 0.15rem;
+    }
+    &__mainheading{
+        font-size: 1rem;
+        font-family: sans-serif;
+    }
+    &__blackline{
+        border-top: 2px solid black;
+        width: 7vw;
+    }
+    &__menudesc{
+        width: 70%;
+        text-align: center;
+        color: #BBAEA6;
+        font-weight: bold;
+        margin-bottom: 7vh;
+    }
+}
+
+/*style part for the whole menu container*/
+.menulist{
+    display: flex;
+    flex-direction: row;
+    &__chefrecommend{
+        height: auto;
+        width: 50vw;
+        background-color: #F6F3F1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        & h1{
+            font-weight:600;
+        }
+    }
+/*style part for the menu images*/    
+    &__chefimage{
+        height:auto;
+        width: 50vw;
+        background-color: #F6F3F1;
+        & img{
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+}
+/*style part for the name of the dishes*/
+.dishname{
+    &__mainname{
+        margin-bottom:0px;
+        padding-bottom:px;
+        font-family: serif;
+    }
+    &__desc{
+        margin-top: 0px;
+        padding-top: 0px;
+        color: #A49F9F;
+        font-size: small;
+    }
+    & h2 span{
+        color: #A49F9F;
+        font-size: 1rem;
+    }
+}
+
+.endredline{
+    height: 25vh;
+    width: 100vw;
+    background-color: #F6F3F1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    &__redline{
+        margin-top: 7vh;
+        left: 50vw;
+        border-left: 2px solid red;
+        height: 13vh;
+        margin-bottom: 7vh;
+    }
+}
