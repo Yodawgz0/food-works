@@ -1,7 +1,7 @@
 .footerContainer {
   position: relative;
 }
-img{
+img {
   margin: 0px;
   padding: 0px;
 }
@@ -19,39 +19,37 @@ img{
   text-align: center;
   align-items: center;
 
-  
-
-  &__mainheading{
+  &__mainheading {
     margin: 0px;
     padding: 0px;
     font-family: serif;
     font-weight: 515;
     font-size: 3rem;
   }
-  &__subheading{
+  &__subheading {
     margin-top: 0px;
     padding-top: 0px;
     letter-spacing: 0.5rem;
     color: #8c8b8c;
     font-size: 0.9rem;
   }
-  &__contact{
+  &__contact {
     margin-top: 60px;
     margin-bottom: 10px;
     font-family: serif;
     font-size: 1.2rem;
   }
-  &__blackline{
+  &__blackline {
     border-bottom: 3px solid black;
     width: 20vw;
   }
-  &__number{
+  &__number {
     font-family: serif;
     color: black;
     font-weight: bold;
     margin-bottom: 80px;
   }
-  &__address{
+  &__address {
     margin-bottom: 0px;
     font-family: serif;
     color: #464646;
@@ -59,7 +57,7 @@ img{
     margin-top: 0px;
     padding: 0%;
   }
-  &__mainaddress{
+  &__mainaddress {
     font-family: serif;
     color: black;
     font-size: 1.2rem;
@@ -67,10 +65,8 @@ img{
     margin-bottom: 20px;
     margin-top: 0px;
   }
-  &__icons{
+  &__icons {
     margin: 0.5em;
     padding: 0.2em;
   }
-
 }
-
