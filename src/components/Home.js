@@ -1,8 +1,43 @@
 import React from "react";
 import MainPic from "../assets/cooking board.png";
 import AboutPic from "../assets/tables.png";
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+
+function MyVerticallyCenteredModal(props) {
+  return (
+    <Modal 
+      {...props}
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          Make A Reservation
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <form>
+          <label for="date">Date:</label><br/>
+          <input type="date" id="date" required/><br/>
+          <label for="time">Time:</label><br/>
+          <input type="time" id="time" required/><br/>
+          <label for="nos">Number Of Guests:</label><br/>
+          <input type="number" id="nos" required/><br/>
+          <label for="name">Reservation Name</label><br/>
+          <input type="text" id="name" required/><br/>
+        </form>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button variant="success" onClick={props.onHide}> Submit</Button>
+        <Button variant="danger" onClick={props.onHide}>Close</Button>
+      </Modal.Footer>
+    </Modal>
+  );
+}
+
 
 export default function Home() {
+  const [modalShow, setModalShow] = React.useState(false);
+
   return (
     <div className="HomeContainer">
       <img alt="introHomeImage" src={MainPic} />
@@ -13,7 +48,16 @@ export default function Home() {
         <h1 className="InviteContainer__subHeading">
           Welcome to "Deeplight Restaurant"
         </h1>
-        <button>Reservation</button>
+        <>
+      <Button variant="dark" onClick={() => setModalShow(true)}>
+        RESERVATION
+      </Button>
+
+      <MyVerticallyCenteredModal
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
+    </>
       </div>
 
       <div className="AboutContainer">
