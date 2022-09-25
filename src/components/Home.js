@@ -112,7 +112,7 @@ export default function Home() {
           asperiores repellat."
         </p>
         <>
-      <Button variant="dark" onClick={() => setModalShow1(true)}>
+      <Button variant="danger" onClick={() => setModalShow1(true)}>
         READ MORE
       </Button>
 
