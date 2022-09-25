@@ -34,9 +34,37 @@ function MyVerticallyCenteredModal(props) {
   );
 }
 
+function MyVerticallyCenteredModal1(props) {
+  return (
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          Read More
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <h4>Deepligth Restaurant</h4>
+        <p>
+          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
+          consectetur ac, vestibulum at eros.
+        </p>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={props.onHide}>Close</Button>
+      </Modal.Footer>
+    </Modal>
+  );
+}
 
 export default function Home() {
   const [modalShow, setModalShow] = React.useState(false);
+  const [modalShow1, setModalShow1] = React.useState(false);
 
   return (
     <div className="HomeContainer">
@@ -82,7 +110,16 @@ export default function Home() {
           voluptatibus maiores alias consequatur aut perferendis doloribus
           asperiores repellat."
         </p>
-        <button className="AboutContainer__ReadMorebutton">Read More</button>
+        <>
+      <Button variant="dark" onClick={() => setModalShow1(true)}>
+        READ MORE
+      </Button>
+
+      <MyVerticallyCenteredModal1
+        show={modalShow1}
+        onHide={() => setModalShow1(false)}
+      />
+    </>
         <div className="AboutContainer__Redline"></div>
       </div>
     </div>
