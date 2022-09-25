@@ -24,10 +24,11 @@ function MyVerticallyCenteredModal(props) {
           <input type="number" id="nos" required/><br/>
           <label for="name">Reservation Name</label><br/>
           <input type="text" id="name" required/><br/>
+          <Button variant="success" onClick={props.onHide}> Submit</Button>
         </form>
       </Modal.Body>
       <Modal.Footer>
-        <Button variant="success" onClick={props.onHide}> Submit</Button>
+        
         <Button variant="danger" onClick={props.onHide}>Close</Button>
       </Modal.Footer>
     </Modal>
