@@ -1,19 +1,14 @@
 import "./App.scss";
-import HeaderMain from "./components/HeaderMain";
-import FooterMain from "./components/FooterMain";
-import Home from "./components/Home";
-import Testimonials from "./components/Testimonials";
-import Menu from "./components/Menu";
+import MainPage from "./pages/mainPage";
+import { Routes, Route } from "react-router-dom";
+import Login from "./pages/loginPage";
 
 function App() {
   return (
-    <div className="App">
-      <HeaderMain />
-      <Home />
-      <Menu />
-      <Testimonials/>
-      <FooterMain />
-    </div>
+    <Routes>
+      <Route path="MainPage" element={<MainPage />} />
+      <Route path="Login" element={<Login />} />
+    </Routes>
   );
 }
 
