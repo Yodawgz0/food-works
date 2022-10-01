@@ -54,7 +54,7 @@
     }
 /*style part for the menu images*/    
     &__chefimage{
-        height:auto;
+        height:80vh;
         width: 50vw;
         background-color: #F6F3F1;
         & img{
@@ -98,3 +98,20 @@
         margin-bottom: 7vh;
     }
 }
+
+//For mobile
+@media (max-width: 480px) {
+  .menucontainer__mainheading{
+    width: 100%;
+    text-align: center;
+  }
+  .menulist__chefimage{
+    height: 80vh;
+    width: 100vw;
+    display: none;
+  }
+  
+
+  
+}
+
