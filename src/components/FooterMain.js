@@ -6,6 +6,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import FooterPic from "../assets/footer.png";
+<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 
 export default function FooterMain() {
   return (
@@ -13,6 +14,7 @@ export default function FooterMain() {
       <img alt="FooterPic" src={FooterPic} />
 
       <div className="footContainer">
+        <div className="footContainer__redline"></div>
         <h1 className="footContainer__mainheading">DEEPLIGHT</h1>
         <h5 className="footContainer__subheading">RESTAURANT</h5>
         <h5 className="footContainer__contact">You can reach us at</h5>
