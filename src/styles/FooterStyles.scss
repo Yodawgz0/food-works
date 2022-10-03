@@ -81,13 +81,16 @@ img {
     
     
   }
+ &__icon{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+ }
 }
 @media (max-width: 500px) {
   .footContainer, .footerContainer{
     width: 100%;
     text-align: center;
-  }
-  .footContainer__icons{
-    flex-direction: row;
   }
 }

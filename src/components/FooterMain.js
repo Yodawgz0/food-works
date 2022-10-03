@@ -25,7 +25,7 @@ export default function FooterMain() {
         <h6 className="footContainer__mainaddress">
           13 Fifth Avenue, New York
         </h6>
-
+        <div className="footContainer__icon">
         <a className="footContainer__icons" href="https://facebook.com">
           <FontAwesomeIcon icon={faFacebook} size="2x" color="black" />
         </a>
@@ -35,6 +35,7 @@ export default function FooterMain() {
         <a className="footContainer__icons" href="https://twitter.com">
           <FontAwesomeIcon icon={faTwitter} size="2x" color="black" />
         </a>
+        </div>
       </div>
     </div>
   );
