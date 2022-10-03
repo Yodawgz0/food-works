@@ -13,7 +13,7 @@ img {
 }
 .testimonialcontainer {
   position: absolute;
-  top: 22vh;
+  top: 18vh;
   left: 6vw;
   display: flex;
   flex-direction: column;
@@ -24,10 +24,13 @@ img {
     font-size: 2.5rem;
     text-align: center;
     font-family: serif;
+    font-weight: bold;
   }
   &__blackline {
     border-bottom: 2px solid black;
-    width: 7vw;
+    width: 6vw;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
   }
   &__details {
     font-size: 2rem;
@@ -35,14 +38,15 @@ img {
     font-style: italic;
     color: rgb(60, 61, 65);
     text-align: center;
-    font-weight: bold;
+    overflow: auto;
+    
   }
   &__redline {
-    margin-top: 18vh;
-
-    border-left: 2px solid red;
-    height: 20vh;
-    left: 50vw;
+    background-color:#E5DBCC;
+  border-left: 2px solid red;
+  height: 20vh;
+  margin-top: 22vh;
+  margin-bottom: 5vh;
   }
 }
 
@@ -81,5 +85,12 @@ img {
     height: 10vh;
     margin-top: 5vh;
     margin-bottom: -1vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .testemonialcontainer__mainheading{
+    width: 100%;
+    text-align: center;
   }
 }
