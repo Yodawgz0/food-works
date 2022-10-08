@@ -3,6 +3,7 @@ import MainPic from "../assets/cooking board.png";
 import AboutPic from "../assets/tables.png";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import Form from "react-bootstrap/Form";
 
 function MyVerticallyCenteredModal(props) {
   return (
@@ -15,22 +16,26 @@ function MyVerticallyCenteredModal(props) {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <form>
-          <label for="date">Date:</label><br/>
-          <input type="date" id="date" required/><br/>
-          <label for="time">Time:</label><br/>
-          <input type="time" id="time" required/><br/>
-          <label for="nos">Number Of Guests:</label><br/>
-          <input type="number" id="nos" required/><br/>
-          <label for="name">Reservation Name</label><br/>
-          <input type="text" id="name" required/><br/>
-          <Button variant="success" onClick={props.onHide}> Submit</Button>
-        </form>
+        <Form>
+         <Form.Group className="mb-3" controlId="formBasicDate">
+         <Form.Label>Date Of Reservation</Form.Label>
+         <Form.Control type="date" placeholder="date"/>
+         </Form.Group>
+         <Form.Group className="mb-3" controlId="formBasicTime">
+         <Form.Label>Time of Reservation</Form.Label>
+         <Form.Control type="time" placeholder="Time"/>
+         </Form.Group>
+         <Form.Group className="mb-3" controlId="formBasicNumber">
+         <Form.Label>Number Of Guests</Form.Label>
+         <Form.Control type="number" placeholder="Number"/>
+         </Form.Group>
+         <Form.Group className="mb-3" controlId="formBasicName">
+         <Form.Label>Reservation Name</Form.Label>
+         <Form.Control type="text" placeholder="Name"/>
+         </Form.Group>
+         <Button  className="mb-3"  variant="success" onClick={props.onHide}> Submit</Button>
+        </Form>
       </Modal.Body>
-      <Modal.Footer>
-        
-        <Button variant="danger" onClick={props.onHide}>Close</Button>
-      </Modal.Footer>
     </Modal>
   );
 }
