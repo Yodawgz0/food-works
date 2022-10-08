@@ -4,10 +4,12 @@ import Form from "react-bootstrap/Form";
 
 export default function Login() {
   const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(email);
+    console.log(password);
   };
 
   return (
@@ -39,7 +41,7 @@ export default function Login() {
                         controlId="formBasicPassword"
                       >
                         <Form.Label>Password</Form.Label>
-                        <Form.Control type="password" placeholder="Password" />
+                        <Form.Control type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
                       </Form.Group>
                       <Button
                         variant="dark"
