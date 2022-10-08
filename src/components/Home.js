@@ -3,7 +3,8 @@ import MainPic from "../assets/cooking board.png";
 import AboutPic from "../assets/tables.png";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-
+import Form from 'react-bootstrap/Form';
+import { FormControl, FormGroup, FormLabel } from "react-bootstrap";
 function MyVerticallyCenteredModal(props) {
   return (
     <Modal 
@@ -16,14 +17,22 @@ function MyVerticallyCenteredModal(props) {
       </Modal.Header>
       <Modal.Body>
         <form>
-          <label for="date">Date:</label><br/>
-          <input type="date" id="date" required/><br/>
-          <label for="time">Time:</label><br/>
-          <input type="time" id="time" required/><br/>
-          <label for="nos">Number Of Guests:</label><br/>
-          <input type="number" id="nos" required/><br/>
-          <label for="name">Reservation Name</label><br/>
-          <input type="text" id="name" required/><br/>
+        <FormGroup>
+            <FormLabel>Date:</FormLabel>
+            <FormControl type="date" placeholder="Enter the date"/>
+          </FormGroup>
+          <FormGroup>
+            <FormLabel>Time:</FormLabel>
+            <FormControl type="time" placeholder="Enter the time"/>
+          </FormGroup>
+          <FormGroup>
+            <FormLabel>Number of Guests:</FormLabel>
+            <FormControl type="number" placeholder="Enter the number"/>
+          </FormGroup>
+          <Form.Group>
+          <Form.Label>Enter your full name:</Form.Label>
+          <Form.Control type="text" placeholder="Enter your full name" />
+        </Form.Group>
           <Button variant="success" onClick={props.onHide}> Submit</Button>
         </form>
       </Modal.Body>
