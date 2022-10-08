@@ -1,13 +1,18 @@
+import { setSelectionRange } from "@testing-library/user-event/dist/utils";
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 
 export default function RegisterPage() {
   const [email, setEmail] = useState("");
+  const [age, setAge] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(email);
+    console.log(age);
+    console.log(password);
   };
     return (
         <div className="registercontainer">
@@ -31,13 +36,13 @@ export default function RegisterPage() {
                           We'll never share your email with anyone else.
                         </Form.Text>
                       </Form.Group>
-                      <Form.Group className="mb-3" controlId="formBasicPassword">
+                      <Form.Group className="mb-3" controlId="formBasicAge">
                         <Form.Label>Age</Form.Label>
-                        <Form.Control type="number" placeholder="Number" />
+                        <Form.Control type="number" placeholder="Number" value={age} onChange={(e) => setAge(e.target.value)}/>
                       </Form.Group>
                       <Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Label>Create Password</Form.Label>
-                        <Form.Control type="password" placeholder="Password" />
+                        <Form.Control type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
                       </Form.Group>
                       <Button
                         variant="dark"
