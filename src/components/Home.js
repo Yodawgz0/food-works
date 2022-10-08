@@ -3,9 +3,9 @@ import MainPic from "../assets/cooking board.png";
 import AboutPic from "../assets/tables.png";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import Form from "react-bootstrap/Form";
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+import Form from 'react-bootstrap/Form';
+import { FormControl, FormGroup, FormLabel } from "react-bootstrap";
 
 function MyVerticallyCenteredModal(props) {
   return (

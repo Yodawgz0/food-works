@@ -1,9 +1,52 @@
 import React from "react";
 import BgPic from "../assets/test.png";
 import ReservePic from "../assets/reservee.png";
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+import Form from 'react-bootstrap/Form';
+import { FormControl, FormGroup, FormLabel } from "react-bootstrap";
 <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-
+function MyVerticallyCenteredModal(props) {
+  return (
+    <Modal 
+      {...props}
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          Make A Reservation
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <form>
+          <FormGroup>
+            <FormLabel>Date:</FormLabel>
+            <FormControl type="date" placeholder="Enter the date"/>
+          </FormGroup>
+          <FormGroup>
+            <FormLabel>Time:</FormLabel>
+            <FormControl type="time" placeholder="Enter the time"/>
+          </FormGroup>
+          <FormGroup>
+            <FormLabel>Number of Guests:</FormLabel>
+            <FormControl type="number" placeholder="Enter the number"/>
+          </FormGroup>
+          <Form.Group>
+          <Form.Label>Enter your full name:</Form.Label>
+          <Form.Control type="text" placeholder="Enter your full name" />
+        </Form.Group>
+      
+          <Button variant="success" onClick={props.onHide}> Submit</Button>
+        </form>
+      </Modal.Body>
+      <Modal.Footer>
+        
+        <Button variant="danger" onClick={props.onHide}>Close</Button>
+      </Modal.Footer>
+    </Modal>
+  );
+}
 export default function Testimonials() {
+  const [modalShow, setModalShow] = React.useState(false);
   return (
     <div className="testcontainer">
       <img alt="BgPic" src={BgPic} />
@@ -26,9 +69,14 @@ export default function Testimonials() {
         <h2 className="ReservationContainer__heading">
           Book a table Now, Come and See Us
         </h2>
-        <button className="ReservationContainer__reservebtn">
-          Reservation
-        </button>
+        <Button variant="dark" onClick={() => setModalShow(true)}>
+        RESERVATION
+      </Button>
+      <MyVerticallyCenteredModal
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
+    
         <div className="ReservationContainer__bottomredline"></div>
       </div>
     </div>
