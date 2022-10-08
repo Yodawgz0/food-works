@@ -2,13 +2,13 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function HeaderMain() {
-  const toggleButton = document.getElementsByClassName("toggle-button")[0];
-  const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+  //const toggleButton = document.getElementsByClassName("toggle-button")[0];
+  //const navbarLinks = document.getElementsByClassName("navbar-links")[0];
 
-  const handlePhoneMenu = () => {};
-  toggleButton.addEventListener("click", () => {
-    navbarLinks.classList.toggle("active");
-  });
+  //const handlePhoneMenu = () => {};
+  //toggleButton.addEventListener("click", () => {
+    //navbarLinks.classList.toggle("active");
+  //});
 
   const navDetails = [
     "Home",
