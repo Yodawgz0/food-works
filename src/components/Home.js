@@ -3,8 +3,10 @@ import MainPic from "../assets/cooking board.png";
 import AboutPic from "../assets/tables.png";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+
 import Form from 'react-bootstrap/Form';
 import { FormControl, FormGroup, FormLabel } from "react-bootstrap";
+
 function MyVerticallyCenteredModal(props) {
   return (
     <Modal 
@@ -16,30 +18,26 @@ function MyVerticallyCenteredModal(props) {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <form>
-        <FormGroup>
-            <FormLabel>Date:</FormLabel>
-            <FormControl type="date" placeholder="Enter the date"/>
-          </FormGroup>
-          <FormGroup>
-            <FormLabel>Time:</FormLabel>
-            <FormControl type="time" placeholder="Enter the time"/>
-          </FormGroup>
-          <FormGroup>
-            <FormLabel>Number of Guests:</FormLabel>
-            <FormControl type="number" placeholder="Enter the number"/>
-          </FormGroup>
-          <Form.Group>
-          <Form.Label>Enter your full name:</Form.Label>
-          <Form.Control type="text" placeholder="Enter your full name" />
-        </Form.Group>
-          <Button variant="success" onClick={props.onHide}> Submit</Button>
-        </form>
+        <Form>
+         <Form.Group className="mb-3" controlId="formBasicDate">
+         <Form.Label>Date Of Reservation</Form.Label>
+         <Form.Control type="date" placeholder="date"/>
+         </Form.Group>
+         <Form.Group className="mb-3" controlId="formBasicTime">
+         <Form.Label>Time of Reservation</Form.Label>
+         <Form.Control type="time" placeholder="Time"/>
+         </Form.Group>
+         <Form.Group className="mb-3" controlId="formBasicNumber">
+         <Form.Label>Number Of Guests</Form.Label>
+         <Form.Control type="number" placeholder="Number"/>
+         </Form.Group>
+         <Form.Group className="mb-3" controlId="formBasicName">
+         <Form.Label>Reservation Name</Form.Label>
+         <Form.Control type="text" placeholder="Name"/>
+         </Form.Group>
+         <Button  className="mb-3"  variant="success" onClick={props.onHide}> Submit</Button>
+        </Form>
       </Modal.Body>
-      <Modal.Footer>
-        
-        <Button variant="danger" onClick={props.onHide}>Close</Button>
-      </Modal.Footer>
     </Modal>
   );
 }
@@ -79,7 +77,7 @@ export default function Home() {
   return (
     <div className="HomeContainer">
       <img alt="introHomeImage" src={MainPic} />
-      <img alt="AboutPic" src={AboutPic} />
+      <img className="ImageTwo" alt="AboutPic" src={AboutPic} />
 
       <div className="InviteContainer">
         <h2 className="InviteContainer__mainHeading">delightful experiences</h2>

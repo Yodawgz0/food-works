@@ -2,6 +2,8 @@ import React from "react";
 import Chefrec from "../assets/chefrec_img.png";
 import maincourse from "../assets/maincourse_img.png";
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+
 export default function Menu() {
   const fooditem = [
     {
