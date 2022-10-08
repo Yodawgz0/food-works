@@ -33,14 +33,16 @@ img{
 
 .AboutContainer{
   display: flex;
+  flex-basis:auto;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   height: auto;
-  width: 100;
+  width: 100vw;
   position: relative;
   text-align: center;
   background-color: #E5DBCC;
+  
   &__mainHeading{
     font-size: 2.0rem;
     font-family: cursive;
@@ -93,4 +95,3 @@ img{
   border: 5px solid white;
   
 }
-

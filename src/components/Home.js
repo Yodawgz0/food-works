@@ -5,6 +5,8 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Form from "react-bootstrap/Form";
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+
 function MyVerticallyCenteredModal(props) {
   return (
     <Modal 
@@ -75,7 +77,7 @@ export default function Home() {
   return (
     <div className="HomeContainer">
       <img alt="introHomeImage" src={MainPic} />
-      <img alt="AboutPic" src={AboutPic} />
+      <img className="ImageTwo" alt="AboutPic" src={AboutPic} />
 
       <div className="InviteContainer">
         <h2 className="InviteContainer__mainHeading">delightful experiences</h2>
