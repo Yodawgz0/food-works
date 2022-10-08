@@ -1,17 +1,13 @@
 import React from "react";
 import MainPic from "../assets/cooking board.png";
 import AboutPic from "../assets/tables.png";
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
-
-import Form from 'react-bootstrap/Form';
-import { FormControl, FormGroup, FormLabel } from "react-bootstrap";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
+import Form from "react-bootstrap/Form";
 
 function MyVerticallyCenteredModal(props) {
   return (
-    <Modal 
-      {...props}
-    >
+    <Modal {...props}>
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
           Make A Reservation
@@ -19,23 +15,26 @@ function MyVerticallyCenteredModal(props) {
       </Modal.Header>
       <Modal.Body>
         <Form>
-         <Form.Group className="mb-3" controlId="formBasicDate">
-         <Form.Label>Date Of Reservation</Form.Label>
-         <Form.Control type="date" placeholder="date"/>
-         </Form.Group>
-         <Form.Group className="mb-3" controlId="formBasicTime">
-         <Form.Label>Time of Reservation</Form.Label>
-         <Form.Control type="time" placeholder="Time"/>
-         </Form.Group>
-         <Form.Group className="mb-3" controlId="formBasicNumber">
-         <Form.Label>Number Of Guests</Form.Label>
-         <Form.Control type="number" placeholder="Number"/>
-         </Form.Group>
-         <Form.Group className="mb-3" controlId="formBasicName">
-         <Form.Label>Reservation Name</Form.Label>
-         <Form.Control type="text" placeholder="Name"/>
-         </Form.Group>
-         <Button  className="mb-3"  variant="success" onClick={props.onHide}> Submit</Button>
+          <Form.Group className="mb-3" controlId="formBasicDate">
+            <Form.Label>Date Of Reservation</Form.Label>
+            <Form.Control type="date" placeholder="date" />
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="formBasicTime">
+            <Form.Label>Time of Reservation</Form.Label>
+            <Form.Control type="time" placeholder="Time" />
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="formBasicNumber">
+            <Form.Label>Number Of Guests</Form.Label>
+            <Form.Control type="number" placeholder="Number" />
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="formBasicName">
+            <Form.Label>Reservation Name</Form.Label>
+            <Form.Control type="text" placeholder="Name" />
+          </Form.Group>
+          <Button className="mb-3" variant="success" onClick={props.onHide}>
+            {" "}
+            Submit
+          </Button>
         </Form>
       </Modal.Body>
     </Modal>
@@ -51,9 +50,7 @@ function MyVerticallyCenteredModal1(props) {
       centered
     >
       <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          Read More
-        </Modal.Title>
+        <Modal.Title id="contained-modal-title-vcenter">Read More</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <h4>Deepligth Restaurant</h4>
@@ -85,15 +82,15 @@ export default function Home() {
           Welcome to "Deeplight Restaurant"
         </h1>
         <>
-      <Button variant="dark" onClick={() => setModalShow(true)}>
-        RESERVATION
-      </Button>
+          <Button variant="dark" onClick={() => setModalShow(true)}>
+            RESERVATION
+          </Button>
 
-      <MyVerticallyCenteredModal
-        show={modalShow}
-        onHide={() => setModalShow(false)}
-      />
-    </>
+          <MyVerticallyCenteredModal
+            show={modalShow}
+            onHide={() => setModalShow(false)}
+          />
+        </>
       </div>
 
       <div className="AboutContainer">
@@ -119,15 +116,15 @@ export default function Home() {
           asperiores repellat."
         </p>
         <>
-      <Button variant="danger" onClick={() => setModalShow1(true)}>
-        READ MORE
-      </Button>
+          <Button variant="danger" onClick={() => setModalShow1(true)}>
+            READ MORE
+          </Button>
 
-      <MyVerticallyCenteredModal1
-        show={modalShow1}
-        onHide={() => setModalShow1(false)}
-      />
-    </>
+          <MyVerticallyCenteredModal1
+            show={modalShow1}
+            onHide={() => setModalShow1(false)}
+          />
+        </>
         <div className="AboutContainer__Redline"></div>
       </div>
     </div>

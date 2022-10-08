@@ -6,7 +6,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import FooterPic from "../assets/footer.png";
-<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>;
 
 export default function FooterMain() {
   return (
@@ -26,15 +26,15 @@ export default function FooterMain() {
           13 Fifth Avenue, New York
         </h6>
         <div className="footContainer__icon">
-        <a className="footContainer__icons" href="https://facebook.com">
-          <FontAwesomeIcon icon={faFacebook} size="2x" color="black" />
-        </a>
-        <a className="footContainer__icons" href="https://instagram.com">
-          <FontAwesomeIcon icon={faInstagram} size="2x" color="black" />
-        </a>
-        <a className="footContainer__icons" href="https://twitter.com">
-          <FontAwesomeIcon icon={faTwitter} size="2x" color="black" />
-        </a>
+          <a className="footContainer__icons" href="https://facebook.com">
+            <FontAwesomeIcon icon={faFacebook} size="2x" color="black" />
+          </a>
+          <a className="footContainer__icons" href="https://instagram.com">
+            <FontAwesomeIcon icon={faInstagram} size="2x" color="black" />
+          </a>
+          <a className="footContainer__icons" href="https://twitter.com">
+            <FontAwesomeIcon icon={faTwitter} size="2x" color="black" />
+          </a>
         </div>
       </div>
     </div>

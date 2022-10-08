@@ -1,17 +1,14 @@
 import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
-
 
 export default function HeaderMain() {
-  const toggleButton = document.getElementsByClassName("toggle-button")[0];
-  const navbarLinks = document.getElementsByClassName("navbar-links")[0];
-  
-  const handlePhoneMenu = () => {};
-  toggleButton.addEventListener("click", () => {
-    navbarLinks.classList.toggle("active");
-  });
-  
+  // const toggleButton = document.getElementsByClassName("toggle-button")[0];
+  // const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+
+  // const handlePhoneMenu = () => {};
+  // toggleButton.addEventListener("click", () => {
+  //   navbarLinks.classList.toggle("active");
+  // });
+
   const navDetails = [
     "Home",
     "Menu",
@@ -27,8 +24,8 @@ export default function HeaderMain() {
         <a href="#" className="toggle-button">
           {/* Make this Icon */}
           {/*<FontAwesomeIcon icon="fa-solid fa-bars" />*/}
-           <span className="bar"></span>
-           <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
           <span className="bar"></span>
         </a>
         <div className="navbar-links">
@@ -68,4 +65,3 @@ export default function HeaderMain() {
     </div>
   );
 }
-
