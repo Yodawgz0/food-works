@@ -57,8 +57,10 @@ img{
     color: rgb(85, 79, 79);
     width: 82%;
     text-align: center;
+    margin-top: 10px;
   }
   &__blackline{
+    height: 1.5vh;
     border-bottom: 2px solid black;
     width: 7vw;
   }
@@ -94,4 +96,31 @@ img{
   padding: 0.5rem 1rem 0.5rem 1rem;
   border: 5px solid white;
   
+}
+
+@media (max-width: 569px) {
+  .HomeContainer img{
+    width: 100%;
+    height: 10%;
+  }
+  .InviteContainer{
+    top: 10vh;
+    left: 6vw;
+  }
+  .InviteContainer__subHeading {
+    font-size: 20px;
+    }
+    .InviteContainer__mainHeading{
+      font-size: 30px
+    }
+    .InviteContainer button{
+      font-size: 15px;
+      border-color: gray;
+    }
+    .InviteContainer button{
+      background-color: gray; color: black;
+      border: 4px solid white;
+    }
+    
+   
 }

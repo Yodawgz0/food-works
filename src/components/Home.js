@@ -73,11 +73,11 @@ export default function Home() {
 
   return (
     <div className="HomeContainer">
-      <img alt="introHomeImage" src={MainPic} />
+      <img className= "ImageOne"alt="introHomeImage" src={MainPic} />
       <img className="ImageTwo" alt="AboutPic" src={AboutPic} />
 
       <div className="InviteContainer">
-        <h2 className="InviteContainer__mainHeading">delightful experiences</h2>
+        <h2 className="InviteContainer__mainHeading">Delightful experiences</h2>
         <h1 className="InviteContainer__subHeading">
           Welcome to "Deeplight Restaurant"
         </h1>
@@ -95,9 +95,9 @@ export default function Home() {
 
       <div className="AboutContainer">
         <div className="AboutContainer__TopRedline"></div>
-        <h2 className="AboutContainer__mainHeading">honest,flavorful food</h2>
+        <h2 className="AboutContainer__mainHeading">Honest and flavorful food</h2>
         <h1 className="AboutContainer__subHeading">
-          A FEW WORDS ABOUT OUR RESTAURANT
+          A few words about our restaurant
         </h1>
         <div className="AboutContainer__blackline"></div>
         <p className="AboutContainer__paragraph">
@@ -106,7 +106,8 @@ export default function Home() {
           et quas molestias excepturi sint occaecati cupiditate non provident,
           similique sunt in culpa qui officia deserunt mollitia animi, id est
           laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita
-          distinctio. Nam libero tempore, cum soluta nobis est eligendi optio
+          distinctio.<br></br><br></br>
+          Nam libero tempore, cum soluta nobis est eligendi optio
           cumque nihil impedit quo minus id quod maxime placeat facere possimus,
           omnis voluptas assumenda est, omnis dolor repellendus. Temporibus
           autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe
