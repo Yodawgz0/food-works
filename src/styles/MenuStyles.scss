@@ -26,6 +26,7 @@
     &__blackline{
         border-top: 2px solid black;
         width: 7vw;
+        padding-top: 20px;
     }
     &__menudesc{
         width: 70%;
@@ -50,6 +51,9 @@
         align-items: center;
         & h1{
             font-weight:600;
+            padding-bottom: 30px;
+            border-bottom: 1.5px solid black;
+            margin: 1em auto;
         }
     }
 /*style part for the menu images*/    
