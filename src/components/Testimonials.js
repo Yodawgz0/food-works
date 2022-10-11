@@ -67,9 +67,9 @@ export default function Testimonials() {
         <div className="testimonialcontainer__redline"></div>
       </div>
       <div className="ReservationContainer">
-        <h3 className="ReservationContainer__smallheading">join us</h3>
+        <h3 className="ReservationContainer__smallheading">Join us</h3>
         <h2 className="ReservationContainer__heading">
-          Book a table Now, Come and See Us
+          Book a table now, come and see us
         </h2>
         <Button variant="dark" onClick={() => setModalShow(true)}>
           RESERVATION
