@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faNavicon} from "@fortawesome/free-solid-svg-icons";
 
 export default function HeaderMain() {
   // const toggleButton = document.getElementsByClassName("toggle-button")[0];
@@ -20,13 +22,10 @@ export default function HeaderMain() {
   return (
     <div className="Parent">
       <nav className="navbar1">
-        <div className="Options">Options</div>
+        <div className="Topbar"></div>
         <a href="#" className="toggle-button">
           {/* Make this Icon */}
-          {/*<FontAwesomeIcon icon="fa-solid fa-bars" />*/}
-          <span className="bar"></span>
-          <span className="bar"></span>
-          <span className="bar"></span>
+          <FontAwesomeIcon icon= {faNavicon} size="2x" color="white" />
         </a>
         <div className="navbar-links">
           {/* Map please here  */}
