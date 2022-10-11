@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faUtensils} from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router-dom";
+
 
 export default function RegisterPage() {
   const [email, setEmail] = useState("");
@@ -13,6 +17,8 @@ export default function RegisterPage() {
     console.log(age);
     console.log(password);
   };
+  const navigate = useNavigate();
+
   return (
     <div className="registercontainer">
       <div className="registercontainer__bord1">
@@ -20,8 +26,8 @@ export default function RegisterPage() {
           <div className="registercontainer__bord3">
             <div className="registercontainer__bord4">
               <div className="registercontainer__rcontainer rformcontainer">
-                <div className="registerformcontainer__restaurantname">
-                  <h1>DEEPLIGHT RESTAURANT</h1>
+                <div className="rformcontainer__restaurantname">
+                  <h2>SIGN UP </h2>
                   <Form>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                       <Form.Label>Email address</Form.Label>
@@ -54,14 +60,21 @@ export default function RegisterPage() {
                       />
                     </Form.Group>
                     <Button
-                      variant="dark"
+                      variant="danger"
                       type="submit"
                       onClick={(e) => handleSubmit(e)}
+                      onClick={()=>navigate("/MainPage")}
                     >
                       Submit
                     </Button>
                   </Form>
                 </div>
+                <div className="rformcontainer__style">
+                    <h1 className="forrmContainer__mainHeading">WELCOME TO</h1>
+                    <h1 className="forrmContainer__mainHeading">DEEPLIGHT</h1>
+                    <h5 className="forrmContainer__subHeading">RESTAURANT</h5>
+                    <FontAwesomeIcon icon={faUtensils} size="7x" color="black" />
+                  </div>
               </div>
             </div>
           </div>

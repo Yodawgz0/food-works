@@ -5,7 +5,7 @@
     align-items: center;
     height: 100vh;
     width: 100vw;
-    background-color:rgb(244,198,198);
+    background-color:rgb(5, 255, 172);
     &__bord1{
         display: flex;
         flex-direction: row;
@@ -13,7 +13,7 @@
         align-items: center;
         height:95vh;
         width: 95vw;
-        background-color: rgb(234,242,195);
+        background-color: rgb(70, 235, 180);
     }
     &__bord2{
         display: flex;
@@ -22,7 +22,7 @@
         align-items: center;
         height: 90vh;
         width: 90vw;
-        background-color: rgb(198,242,242);
+        background-color: rgb(88, 245, 192);
     }
     &__bord3{
         display: flex;
@@ -31,7 +31,7 @@
         align-items: center;
         height: 85vh;
         width: 85vw;
-        background-color: rgb(226,197,245);
+        background-color: rgb(134, 255, 215);
     }
     &__bord4{
         display: flex;
@@ -40,19 +40,67 @@
         align-items: center;
         height: 80vh;
         width: 80vw;
-        background-color: rgb(198,245,167);
+        background-color: rgb(169, 255, 226);
     }
     &__container{
         height: 75vh;
         width: 75vw;
         background-color: white;
-        border: 2px solid black;
+        
     }
 }
 .formcontainer{
     display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-        overflow: auto;
+        flex-wrap: wrap;
+        background-color: rgb(214, 252, 239);
+        &__style{
+            height: 80%;
+            width: 40%;
+            background-color: rgb(106, 230, 255);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 0px 50px 10px rgb(142, 181, 255);
+        }
+        &__restaurantname{
+            height: 80%;
+            width: 40%;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 0px 50px 10px rgb(142, 181, 255);
+        }
+        &__restaurantname h2{
+            color: rgb(13,202,240);
+        }
 }
+
+.forrmContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    &__mainHeading {
+      
+      margin: 0px;
+      padding: 0px;
+      font-family: serif;
+      font-weight: 515;
+      font-size: 3rem;
+    }
+    &__subHeading {
+      margin-top: 0px;
+      padding-top: 0px;
+      letter-spacing: 1rem;
+      color:white;
+      font-size: 0.7rem;
+    }
+  }

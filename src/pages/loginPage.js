@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faUtensils} from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -11,6 +14,8 @@ export default function Login() {
     console.log(email);
     console.log(password);
   };
+ 
+  const navigate = useNavigate();
 
   return (
     <>
@@ -20,10 +25,16 @@ export default function Login() {
             <div className="maincontainer__bord3">
               <div className="maincontainer__bord4">
                 <div className="maincontainer__container formcontainer">
+                  <div className="formcontainer__style">
+                    <h1 className="forrmContainer__mainHeading">WELCOME TO</h1>
+                    <h1 className="forrmContainer__mainHeading">DEEPLIGHT</h1>
+                    <h5 className="forrmContainer__subHeading">RESTAURANT</h5>
+                    <FontAwesomeIcon icon={faUtensils } size="7x" color="black" />
+                  </div>
                   <div className="formcontainer__restaurantname">
-                    <h1>DEEPLIGHT RESTAURANT</h1>
+                    <h2>LOGIN</h2>
                     <Form>
-                      <Form.Group className="mb-3" controlId="formBasicEmail">
+                      <Form.Group className="m-2" controlId="formBasicEmail">
                         <Form.Label>Email address</Form.Label>
                         <Form.Control
                           type="email"
@@ -37,7 +48,7 @@ export default function Login() {
                       </Form.Group>
 
                       <Form.Group
-                        className="mb-3"
+                        className="m-2"
                         controlId="formBasicPassword"
                       >
                         <Form.Label>Password</Form.Label>
@@ -47,19 +58,18 @@ export default function Login() {
                           value={password}
                           onChange={(e) => setPassword(e.target.value)}
                         />
-                      </Form.Group>
-                      <Button
-                        variant="dark"
+                      </Form.Group >
+                      <Button className="m-2"
+                        variant="info"
                         type="submit"
                         onClick={(e) => handleSubmit(e)}
+                        onClick={()=>navigate("/MainPage")}
                       >
                         Submit
                       </Button>
-                      <Form.Group>
+                      <Form.Group className="m-2">
                         <Form.Label>Don't have an account?</Form.Label>
-                      </Form.Group>
-                      <Form.Group>
-                        <Button variant="dark" type="submit">
+                        <Button className="m-2 " variant="info" onClick={()=>navigate("/RegisterPage")}>
                           Sign-Up
                         </Button>
                       </Form.Group>
