@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faUtensils} from "@fortawesome/free-solid-svg-icons";
+import { faUtensils } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
 
 export default function Login() {
@@ -13,8 +13,10 @@ export default function Login() {
     e.preventDefault();
     console.log(email);
     console.log(password);
+    alert("You have logged in!!");
+    navigate("/MainPage");
   };
- 
+
   const navigate = useNavigate();
 
   return (
@@ -29,7 +31,11 @@ export default function Login() {
                     <h1 className="forrmContainer__mainHeading">WELCOME TO</h1>
                     <h1 className="forrmContainer__mainHeading">DEEPLIGHT</h1>
                     <h5 className="forrmContainer__subHeading">RESTAURANT</h5>
-                    <FontAwesomeIcon icon={faUtensils } size="7x" color="black" />
+                    <FontAwesomeIcon
+                      icon={faUtensils}
+                      size="7x"
+                      color="black"
+                    />
                   </div>
                   <div className="formcontainer__restaurantname">
                     <h2>LOGIN</h2>
@@ -47,10 +53,7 @@ export default function Login() {
                         </Form.Text>
                       </Form.Group>
 
-                      <Form.Group
-                        className="m-2"
-                        controlId="formBasicPassword"
-                      >
+                      <Form.Group className="m-2" controlId="formBasicPassword">
                         <Form.Label>Password</Form.Label>
                         <Form.Control
                           type="password"
@@ -58,18 +61,22 @@ export default function Login() {
                           value={password}
                           onChange={(e) => setPassword(e.target.value)}
                         />
-                      </Form.Group >
-                      <Button className="m-2"
+                      </Form.Group>
+                      <Button
+                        className="m-2"
                         variant="info"
                         type="submit"
                         onClick={(e) => handleSubmit(e)}
-                        onClick={()=>navigate("/MainPage")}
                       >
                         Submit
                       </Button>
                       <Form.Group className="m-2">
                         <Form.Label>Don't have an account?</Form.Label>
-                        <Button className="m-2 " variant="info" onClick={()=>navigate("/RegisterPage")}>
+                        <Button
+                          className="m-2 "
+                          variant="info"
+                          onClick={() => navigate("/RegisterPage")}
+                        >
                           Sign-Up
                         </Button>
                       </Form.Group>

@@ -2,22 +2,24 @@ import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faUtensils} from "@fortawesome/free-solid-svg-icons";
+import { faUtensils } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
-
 
 export default function RegisterPage() {
   const [email, setEmail] = useState("");
   const [age, setAge] = useState("");
   const [password, setPassword] = useState("");
 
+  const navigate = useNavigate();
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(email);
     console.log(age);
     console.log(password);
+    alert("You have logged in!!");
+    navigate("/MainPage");
   };
-  const navigate = useNavigate();
 
   return (
     <div className="registercontainer">
@@ -63,18 +65,17 @@ export default function RegisterPage() {
                       variant="danger"
                       type="submit"
                       onClick={(e) => handleSubmit(e)}
-                      onClick={()=>navigate("/MainPage")}
                     >
                       Submit
                     </Button>
                   </Form>
                 </div>
                 <div className="rformcontainer__style">
-                    <h1 className="forrmContainer__mainHeading">WELCOME TO</h1>
-                    <h1 className="forrmContainer__mainHeading">DEEPLIGHT</h1>
-                    <h5 className="forrmContainer__subHeading">RESTAURANT</h5>
-                    <FontAwesomeIcon icon={faUtensils} size="7x" color="black" />
-                  </div>
+                  <h1 className="forrmContainer__mainHeading">WELCOME TO</h1>
+                  <h1 className="forrmContainer__mainHeading">DEEPLIGHT</h1>
+                  <h5 className="forrmContainer__subHeading">RESTAURANT</h5>
+                  <FontAwesomeIcon icon={faUtensils} size="7x" color="black" />
+                </div>
               </div>
             </div>
           </div>

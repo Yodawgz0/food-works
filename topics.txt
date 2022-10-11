@@ -1,0 +1,45 @@
+JavaScript:-
+    Promises
+    REST Api and CRUD operations
+    (https://documenter.getpostman.com/view/8858534/SW7dX7JG#97c7e1ce-0a37-4d6d-89af-aba8f34f1f4c)
+    filter, reduce, map , foreach , for in and for of 
+    hoisting
+    let var const
+    scoping
+    NaN
+    how convert string int object arrays
+    Virual DOM what is and how does react uses it
+    Flatten array (self implementation)
+    Event loop
+    Self implementation of Promise.all() (Replace Promise.all with your own method)
+    Challenges in react (drawbacks)
+    Virtual DOM
+    hoisting
+    let const var
+    promises
+    map filter reduce foreach
+    currying
+    scoping
+    any hooks?
+
+
+CSS3 vs css2
+    Psuedo Elements
+    difference between display:none and visibility:hidden 
+    box model
+    dsiplay flex 
+    what are border radius and how do you set it
+    CSS Units usage
+
+
+HTML5 ->
+
+    HTML versiond have u used?
+    how to detect version your html5
+    semantic tags
+    maintain code quality 
+    eventBubbling 
+    prevent default
+    input tag , do u know how to make it mandatory and any patterns? to verify
+    a vs p vs span 
+    DOM vs BOM ~
